@@ -2,19 +2,22 @@ body {
   background: #ead6ff;
   font-size: 14px;
   font-family: Verdana, sans-serif;
+  --reni: #8300C8;
 }
 
 .container {
   width: 90%;
-  margin: 8px auto;
+  margin: 75px auto;
   background: #fff;
   border-radius: 4px;
-  padding: 16px;
+  padding: 30px 16px;
   position: relative;
 }
 
 #question {
-  margin-bottom: 16px;
+  margin-bottom: 25px;
+  color: var(--reni);
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -25,10 +28,10 @@ body {
 }
 
 #choices > li {
-  border: 1px solid #ccc;
+  border: 1px solid var(--reni);
   border-radius: 4px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -44,7 +47,7 @@ body {
 }
 
 #choices > li.correct::after {
-  content: ' ... correct!';
+  content: ' ...正解!';
 }
 
 #choices > li.wrong {
@@ -55,51 +58,38 @@ body {
 }
 
 #choices > li.wrong::after {
-  content: ' ... wrong!';
+  content: ' ... 残念!';
 }
 
-#btn, .container > a {
+#btn, #result > a {
   display: block;
   background: rgb(194, 103, 243);
   padding: 8px;
-  margin-bottom:40px; 
+  margin: 30px auto;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  color: #fff;
-  box-shadow: 0 4px 0 rgb(149, 4, 226);
-}
-
-#result > a {
-  display: block;
-  background: rgb(194, 103, 243);
-  padding: 8px;
-  margin-bottom:10px; 
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 4px 0 rgb(149, 4, 226);
   text-decoration: none;
+  color: #fff;
 }
 
 #btn.disabled {
   background: #ccc;
-  box-shadow: 0 4px 0 #bbb;
   opacity: 0.7;
 }
 
 #result {
   position: absolute;
-  width: 300px;
+  width: 280px;
   background: #fff;
   padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   top: 50px;
   left: 0;
   right: 0;
   margin: 0 auto;
+  border: 10px solid var(--reni);
   border-radius: 4px;
+  color: var(--reni);
   text-align: center;
   transition: 0.4s;
 }
@@ -108,11 +98,6 @@ body {
   transform: translateY(-700px);
 }
 
-#result > p {
+#result > h5 {
   font-size: 24px;
-}
-
-#result, .container > a {
-  display: block;
-  text-decoration: none;
 }
