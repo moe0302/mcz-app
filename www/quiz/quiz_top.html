@@ -6,6 +6,10 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="../components/loader.css">
     <script src="../components/loader.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- フォントの設定の読み込み -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <script>
         //
         // TODO: Write JavaScript code here
@@ -13,19 +17,18 @@
     </script>
 </head>
 <body>
-  <div data-role="page" id="quiz" data-theme="a" data-url="quiz">
+  <div data-role="page" id="quiz" data-theme="a">
     <div data-role="header">
-      <h1>MCZ Quiz</h1>
+      <h1 class="title reni">MCZ Quiz</h1>
     </div><!-- /header -->
 
-    <div role="main" class="ui-content">
-      <h2>MCZ Quiz</h2>
+    <div role="main" class="quiz">
       <h3>ももクロについての問題が10問出てきます</h3>
       <h3>何問答えられるかチャレンジ！</h3>
 
-      <p><a href="quiz.html">Start</a></p>
+      <p><a href="quiz.html" class="btn reni">Start</a></p>
       
-      <p><a href="../index.html">Back to page "top"</a></p>
+      <p><a href="../index.html" class="btn reni">Back to page "top"</a></p>
     </div>
   </div>
 </body>

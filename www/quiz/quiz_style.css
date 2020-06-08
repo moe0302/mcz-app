@@ -1,5 +1,5 @@
 body {
-  background: #efdec1;
+  background: #ead6ff;
   font-size: 14px;
   font-family: Verdana, sans-serif;
 }
@@ -58,14 +58,29 @@ body {
   content: ' ... wrong!';
 }
 
-#btn, #result > a {
-  background: #3498db;
+#btn, .container > a {
+  display: block;
+  background: rgb(194, 103, 243);
   padding: 8px;
+  margin-bottom:40px; 
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
   color: #fff;
-  box-shadow: 0 4px 0 #2880b9;
+  box-shadow: 0 4px 0 rgb(149, 4, 226);
+}
+
+#result > a {
+  display: block;
+  background: rgb(194, 103, 243);
+  padding: 8px;
+  margin-bottom:10px; 
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 0 rgb(149, 4, 226);
+  text-decoration: none;
 }
 
 #btn.disabled {
@@ -90,14 +105,14 @@ body {
 }
 
 #result.hidden {
-  transform: translateY(-500px);
+  transform: translateY(-700px);
 }
 
 #result > p {
   font-size: 24px;
 }
 
-#result > a {
+#result, .container > a {
   display: block;
   text-decoration: none;
 }
