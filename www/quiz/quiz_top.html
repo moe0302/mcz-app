@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../components/loader.css">
     <script src="../components/loader.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="quiz_style.css">
+
     <!-- フォントの設定の読み込み -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <script>
         //
         // TODO: Write JavaScript code here
@@ -17,19 +19,18 @@
     </script>
 </head>
 <body>
-  <div data-role="page" id="quiz" data-theme="a">
-    <div data-role="header">
-      <h1 class="title reni">MCZ Quiz</h1>
-    </div><!-- /header -->
-
-    <div role="main" class="quiz">
-      <h3>ももクロについての問題が10問出てきます</h3>
-      <h3>何問答えられるかチャレンジ！</h3>
-
-      <p><a href="quiz.html" class="btn reni">Start</a></p>
-      
+  <div class="quiz-wrapper">
+    <h1 class="title reni">MCZ <br> Quiz</h1>
+    <section>
+      <div class="explanation">
+        <h3>ももクロについての問題が<br>10問出てきます</h3>
+        <h3>何問答えられるかチャレンジ！</h3>
+      </div>
+      <p><a href="quiz.html" class="btn reni start">Start</a></p>
+    </section>
+    <footer>
       <p><a href="../index.html" class="backtop">Back to page "top"</a></p>
-    </div>
+    </footer>
   </div>
 </body>
 </html>

@@ -1,0 +1,37 @@
+body {
+  background: #ffffea;
+  --shiori: #FCC630;
+}
+
+.mood-wrapper {
+  min-height: 93vh;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.backtop {
+   background: var(--shiori);
+}
+
+section {
+  margin-top: 20%;
+}
+
+.explanation {
+  margin-bottom: 10%;
+}
+
+.explanation > h3 {
+  font-size: 20px;
+  font-weight: normal;
+}

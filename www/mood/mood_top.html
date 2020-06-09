@@ -6,6 +6,8 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="../components/loader.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="mood_style.css">
+
     <!-- フォントの設定の読み込み -->
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     
@@ -17,23 +19,19 @@
     </script>
 </head>
 <body>
-  <div data-role="page" id="mood" data-theme="a" data-url="mood">
-    <div data-role="header">
-      <h1 class="title shiori">Explore music by mood</h1>
-    </div><!-- /header -->
+  <div class="mood-wrapper">
+    <h1 class="title shiori">Explore music by mood</h1>
 
-    <div role="main" class="ui-content">
-      <h3>今の気分に合わせて曲をオススメします！</h3>
-      <h3>今の気分に合うものを選んでください</h3>
-
-      <p><a href="mood1.html" class="ui-btn ui-shadow ui-corner-all">Start</a></p>
-
-      <p><a href="../index.html" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to page "top"</a></p>
-    </div><!-- /content -->
-
-    <div data-role="footer">
-      <h4>Page Footer</h4>
-    </div><!-- /footer -->
-  </div><!-- /気分でおすすめ終わり -->
+    <section>
+      <div class="explanation">
+        <h3>今の気分に合わせて<br>曲をオススメします！</h3>
+        <h3>今の気分に合うものを選んでください</h3>
+      </div>
+      <p><a href="mood1.html" class="btn shiori">Start</a></p>
+    </section>
+    <footer>
+      <p><a href="../index.html" class="backtop">Back to page "top"</a></p>
+    </footer>
+  </div>
 </body>
 </html>

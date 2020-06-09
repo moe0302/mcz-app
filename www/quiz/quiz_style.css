@@ -1,16 +1,50 @@
 body {
   background: #ead6ff;
   font-size: 14px;
-  font-family: Verdana, sans-serif;
   --reni: #8300C8;
+}
+
+.quiz-wrapper {
+  min-height: 93vh;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.backtop {
+  background: var(--reni);
+}
+
+/*quiztop*/
+section {
+  margin-top: 25%;
+}
+
+.explanation {
+  margin-bottom: 10%;
+}
+
+.explanation > h3 {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .container {
   width: 90%;
-  margin: 75px auto;
+  margin: 0 auto ;
   background: #fff;
   border-radius: 4px;
-  padding: 30px 16px;
+  padding: 5% 5% 1%;
   position: relative;
 }
 
@@ -25,6 +59,7 @@ body {
   list-style: none;
   padding: 0;
   margin-bottom: 16px;
+  font-size: 15px;
 }
 
 #choices > li {
@@ -80,14 +115,14 @@ body {
 
 #result {
   position: absolute;
-  width: 280px;
+  width: 80%;
   background: #fff;
   padding: 30px;
   top: 50px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  border: 10px solid var(--reni);
+  border: 5px solid var(--reni);
   border-radius: 4px;
   color: var(--reni);
   text-align: center;

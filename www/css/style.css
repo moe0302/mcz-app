@@ -11,26 +11,27 @@ body {
   --kanako: #FF2D20;
   --shiori: #FCC630;
   --ayaka:  #E25AAA;
+  padding: 0;
 }
 
 .reni {
   color: var(--reni);
-  border: 1px solid var(--reni);
+  border: 2px solid var(--reni);
 }
 
 .kanako {
   color: var(--kanako);
-  border: 1px solid var(--kanako);
+  border: 2px solid var(--kanako);
 }
 
 .shiori {
   color: var(--shiori);
-  border: 1px solid var(--shiori);
+  border: 2px solid var(--shiori);
 }
 
 .ayaka {
   color: var(--ayaka);
-  border: 1px solid var(--ayaka);
+  border: 2px solid var(--ayaka);
 }
 
 .title {
@@ -39,21 +40,22 @@ body {
   font-size: 50px;
   letter-spacing: 5px;
   border: none;
+  margin-top: 12%;
 }
 
 .logo {
   display: block;
-  width: 85%;
+  width: 80%;
   margin: 12% auto;
 }
 
-
-
 .btn {
   display: block;
-  padding: 20px;
-  margin-bottom: 40px;
+  width: 80%;
+  padding: 15px;
+  margin:0 auto 40px;
   border-radius: 4px;
+  background: white;
   font-size: 25px;
   text-align: center;
   text-decoration: none;
@@ -65,15 +67,13 @@ body {
 }
 
 .backtop {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  left: 30%;
-  padding: 10px;
+  display: inline-block;
+  margin: 5px auto 0; 
+  /* width: 35%; */
+  padding: 2%;
   border-radius: 4px;
   color: white;
-  background: var(--reni);
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
