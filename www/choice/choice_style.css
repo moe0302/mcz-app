@@ -1,0 +1,29 @@
+body {
+  background: #ffdbdb;
+  --kanako: #FF2D20;
+}
+
+.choice-wrapper {
+  min-height: 93vh;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.backtop {
+  background: var(--kanako);
+}
+
+img {
+  width: 80%;
+}

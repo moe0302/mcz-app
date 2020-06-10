@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="choice_style.css">
     <!-- フォントの設定の読み込み -->
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     
@@ -17,12 +18,19 @@
     </script>
 </head>
 <body>
-  <h1 class="title kanako">Today's choice</h1>
-
-  <img src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/23/13/ed/2313eda8-cb38-ff48-3dee-9ea56cfa41c9/KICM-92017.jpg/400x400bb.jpeg">
-  <h1>Stay Gold</h1>
-  <p>Released: November 15, 2019</p>
-  <a href="https://geo.music.apple.com/us/album/stay-gold/1486711058?i=1486711059&mt=1&app=music&ls=1" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/lockup.svg?releaseDate=2019-11-15&kind=song&bubble=apple_music&style=standard-black) no-repeat;width:140px;height:30px;"></a>
-  <p><a href="../index.html">Back to page "top"</a></p>
+  <div class="choice-wrapper">
+    <h1 class="title kanako">Today's choice</h1>
+    <section>
+      <img id="jacket" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/23/13/ed/2313eda8-cb38-ff48-3dee-9ea56cfa41c9/KICM-92017.jpg/400x400bb.jpeg">
+      <h1 id="title">stay gold</h1>
+      <p id="released">Released: November 15, 2019</p>
+      <a id="itunes" href="https://geo.music.apple.com/us/album/stay-gold/1486711058?i=1486711059&mt=1&app=music&ls=1" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/embed/v1/app-icon.svg) no-repeat;width:40px;height:40px;"></a>
+      <a id="spotify" href="https://open.spotify.com/track/2iTMff0H6Mu20KQrJyd3Gq"><img src="https://img.icons8.com/color/48/000000/spotify--v1.png" style="display:inline-block;overflow:hidden;no-repeat;width:40px;height:40px;"></a>
+      <a id="google" href="https://play.google.com/store/music/album?id=Buupp4hwfeypdxtromkd7wdabxa&tid=song-Tqqytd3ue4sza6bnvfabvo35j3e"><img src="https://img.icons8.com/color/48/000000/google-play-music.png" style="display:inline-block;overflow:hidden;no-repeat;width:40px;height:40px;"></a>
+      <a id="amazon" href="https://music.amazon.co.jp/albums/B08162PKNG?trackAsin=B081614CPL&ref=dm_sh_6839-105e-dmcp-607d-ecab5&musicTerritory=JP&marketplaceId=A1VC38T7YXB528"><img src="https://www.seekpng.com/png/full/342-3421723_ios-icon-amazon-music.png" style="display:inline-block;overflow:hidden;no-repeat;width:40px;height:40px;"></a>
+    </section>
+    <footer>
+      <p><a href="../index.html" class="backtop">Back to page "top"</a></p>
+    </footer>
 </body>
 </html>
