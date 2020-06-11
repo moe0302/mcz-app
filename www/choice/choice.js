@@ -210,16 +210,16 @@
 
   // 曲をセットする関数
   function setMusic() {
-  //   let today = new Date();
+    let today = new Date();
     //getTime()で1970年1月1日からの経過ミリ秒を取得
     //1日＝1000ミリ秒×60秒×60分×24時間で割って、1970年1月1日から何日目かを計算
-    // let passedDay = Math.floor(today.getTime() / (1000*60*60*24)); 
-    // console.log(passedDay);
+    let passedDay = Math.floor(today.getTime() / (1000*60*60*24)); 
+    console.log(passedDay);
     //経過した日数を曲数で割った余りを求める
-    // let todayNum = passedDay % (musicSet.length);
-    // console.log(todayNum);
+    let todayNum = passedDay % (musicSet.length);
+    console.log(todayNum);
 
-    let todayNum = 26;
+    // let todayNum = 26;
 
     // 曲の情報を埋め込む
     jacket.setAttribute('src', musicSet[todayNum].j);

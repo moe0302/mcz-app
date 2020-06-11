@@ -23,10 +23,6 @@ footer {
   background: var(--shiori);
 }
 
-section {
-  margin-top: 15%;
-}
-
 .explanation {
   margin-bottom: 10%;
 }
@@ -37,10 +33,49 @@ section {
 }
 
 /*選択肢*/
-section > h2 {
+.question {
+  color: var(--shiori);
   font-weight: normal;
+  font-size: 20px;
 }
 
-.btn {
-  margin-bottom: 30px; 
+.q {
+  width: 80%;
+  height: 340px;
+  background: white;
+  border: 5px solid var(--shiori);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+ }
+ 
+
+.btnA {
+  display: block;
+  border-radius: 4px;
+  background: white;
+  font-family: 'Trebuchet MS';
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin:0 auto;
+  margin-bottom: 20px;
+  width: 70%;
+  padding: 8px;
+  color: black;
+  font-size: 18px;
+}
+
+.answer {
+  /* background: blue; */
+  height: px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 90%;
+  padding-top: 25px;
 }
