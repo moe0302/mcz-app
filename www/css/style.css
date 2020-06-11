@@ -62,6 +62,7 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu {
@@ -70,13 +71,14 @@ body {
 
 .backtop {
   display: inline-block;
-  margin: 5px auto 0; 
+  margin: 0 auto; 
   /* width: 35%; */
-  padding: 2%;
+  padding: 8px;
   border-radius: 4px;
   color: white;
   font-size: 13px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

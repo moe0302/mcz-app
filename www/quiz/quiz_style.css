@@ -70,6 +70,7 @@ section {
   margin: 0 auto 20px;
   width: 80%;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #choices > li:hover {
@@ -110,6 +111,7 @@ section {
   text-decoration: none;
   width: 80%;
   color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #btn.disabled {
