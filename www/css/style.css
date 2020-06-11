@@ -12,6 +12,7 @@ body {
   --shiori: #FCC630;
   --ayaka:  #E25AAA;
   padding: 0;
+  margin: 0;
 }
 
 .reni {
@@ -37,10 +38,10 @@ body {
 .title {
   font-family: 'Monoton', cursive;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 45px;
   letter-spacing: 5px;
   border: none;
-  margin-top: 12%;
+  margin-top: 30px;
 }
 
 .logo {
@@ -57,6 +58,7 @@ body {
   border-radius: 4px;
   background: white;
   font-size: 25px;
+  font-family: 'Trebuchet MS';
   text-align: center;
   text-decoration: none;
   cursor: pointer;

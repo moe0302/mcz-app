@@ -5,6 +5,7 @@ body {
 }
 
 .quiz-wrapper {
+  width: 100%;
   min-height: 93vh;
   position: relative;
   padding-bottom: 5px;
@@ -44,7 +45,7 @@ section {
   margin: 0 auto ;
   background: #fff;
   border-radius: 4px;
-  padding: 5% 5% 1%;
+  padding: 10px 10px 15px;
   position: relative;
 }
 
@@ -58,7 +59,7 @@ section {
 #choices {
   list-style: none;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-size: 15px;
 }
 
@@ -66,7 +67,8 @@ section {
   border: 1px solid var(--reni);
   border-radius: 4px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 80%;
   cursor: pointer;
 }
 
@@ -98,13 +100,15 @@ section {
 
 #btn, #result > a {
   display: block;
-  background: rgb(194, 103, 243);
+  /* background: rgb(194, 103, 243); */
+  background: var(--reni);
   padding: 8px;
-  margin: 30px auto;
+  margin: 25px auto 0;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  width: 80%;
   color: #fff;
 }
 
@@ -117,8 +121,8 @@ section {
   position: absolute;
   width: 80%;
   background: #fff;
-  padding: 30px;
-  top: 50px;
+  padding: 20px;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -135,4 +139,9 @@ section {
 
 #result > h5 {
   font-size: 24px;
+}
+
+#result > p {
+  font-size: 20px;
+  margin-bottom: 40px;
 }
