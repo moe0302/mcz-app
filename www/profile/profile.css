@@ -1,0 +1,7 @@
+body {
+  background: #ffffea;
+}
+
+.back {
+  background: var(--ayaka);
+}

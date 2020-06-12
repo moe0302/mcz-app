@@ -1,17 +1,15 @@
 body {
   background: #ead6ff;
   font-size: 14px;
-  --reni: #8300C8;
 }
 
 .quiz-wrapper {
   width: 100%;
   min-height: 93vh;
-  position: relative;
+  /* position: relative; */
   padding-bottom: 5px;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 footer {
@@ -22,7 +20,7 @@ footer {
   bottom: 0;
 }
 
-.backtop {
+.back {
   background: var(--reni);
 }
 
