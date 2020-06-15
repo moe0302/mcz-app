@@ -1,5 +1,15 @@
 body {
   background: #ffffea;
+  color: var(--shiori);
+}
+
+.btn {
+  border: 5px solid var(--shiori);
+  border-radius: 10px;
+}
+
+h3 {
+  color: #222;
 }
 
 .mood-wrapper {
@@ -67,6 +77,8 @@ footer {
   padding: 8px;
   color: black;
   font-size: 18px;
+  border: 3px solid var(--shiori);
+  border-radius: 10px;
 }
 
 .answer {

@@ -1,7 +1,99 @@
 body {
   background: #ffffea;
+  color: var(--ayaka);
 }
 
 .back {
   background: var(--ayaka);
+}
+
+.profile-wrapper {
+  min-height: 93vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.member {
+  display: inline-block;
+  margin: 0 10px 10px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.member > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: white;
+  display     : inline-block;
+  font-family: 'Suez One', serif;
+  font-size   : 30px;
+  color       : #ffffff;
+  text-decoration: none;
+}
+
+/*メンバーそれぞれのページ*/
+.profile {
+  width: 75%;
+  margin: 0 auto;
+  /* font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.data-ayaka {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 5px outset var(--ayaka);
+  border-radius: 20px;
+}
+
+.data-kanako {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 5px outset var(--kanako);
+  border-radius: 20px;
+}
+
+.data-shiori {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 5px outset var(--shiori);
+  border-radius: 20px;
+}
+
+.data-reni {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 5px outset var(--reni);
+  border-radius: 20px;
+}
+
+.profile h3 {
+  margin: 0;
+}
+
+.profile p {
+  margin: 5px 0 0;
 }

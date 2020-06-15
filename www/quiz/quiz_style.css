@@ -1,6 +1,20 @@
 body {
   background: #ead6ff;
   font-size: 14px;
+  color: var(--reni);
+}
+
+.title {
+  font-size: 55px;
+}
+
+h3 {
+  color: #222;
+}
+
+.btn {
+  border: 5px solid var(--reni);
+  border-radius: 10px;
 }
 
 .quiz-wrapper {
@@ -25,10 +39,6 @@ footer {
 }
 
 /*quiztop*/
-section {
-  margin-top: 25%;
-}
-
 .explanation {
   margin-bottom: 10%;
 }
