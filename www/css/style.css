@@ -13,9 +13,9 @@ body {
   --ayaka:  #E25AAA;
   padding: 0;
   margin: 0;
-  background: -moz-linear-gradient(top left, #ffffea, #ffdbdb 25%, #ffffea 50%, #ead6ff);
-  background: -webkit-linear-gradient(top left, #ffffea, #ffdbdb 25%, #ffffea 50%, #ead6ff);
-  background: linear-gradient(to bottom right, #ffffea, #ffdbdb 25%, #ffffea 50%, #ead6ff);
+  background: -moz-linear-gradient(top left, #ffefff, #ffdbdb 25%, #ffffea 50%, #ead6ff);
+  background: -webkit-linear-gradient(top left, #ffefff, #ffdbdb 25%, #ffffea 50%, #ead6ff);
+  background: linear-gradient(to bottom right, #ffefff, #ffdbdb 25%, #ffffea 50%, #ead6ff);
 }
 
 .reni {
