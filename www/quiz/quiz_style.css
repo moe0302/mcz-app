@@ -19,7 +19,7 @@ h3 {
 
 .quiz-wrapper {
   width: 100%;
-  min-height: 93vh;
+  min-height: 100vh;
   /* position: relative; */
   padding-bottom: 5px;
   margin: 0;

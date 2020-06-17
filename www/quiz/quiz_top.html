@@ -1,35 +1,61 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <link rel="stylesheet" href="../components/loader.css">
-    <script src="../components/loader.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="quiz_style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <link rel="stylesheet" href="../components/loader.css">
+  <script src="../components/loader.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="quiz_style.css">
 
-    <!-- フォントの設定の読み込み -->
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-    <script>
-        //
-        // TODO: Write JavaScript code here
-        //
-    </script>
+  <!-- フォントの設定の読み込み -->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../dist/css/animsition.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../dist/js/animsition.min.js"></script>
+  <script type="text/javascript"> 
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'zoom-in-sm', // ロード時のエフェクト
+        outClass: 'zoom-out-lg', // 離脱時のエフェクト
+        inDuration: 300, // ロード時の演出時間
+        outDuration: 400, // 離脱時の演出時間
+        linkElement: '.animsition-link', // アニメーションを行う要素
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true, // ローディングの有効/無効
+        loadingParentElement: 'body', // ローディング要素のラッパー
+        loadingClass: 'animsition-loading', // ローディングのクラス
+        loadingInner: '', // e.g '' ローディングの内容
+        timeout: false, // 一定時間が経ったらアニメーションをキャンセルの有効/無効
+        timeoutCountdown: 5000, // アニメーションをキャンセルするまでの時間
+        onLoadEvent: true, // onLoadイベント後にアニメーションをするかの有効/無効
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        // ブラウザが配列内のCSSプロパティをサポートしていない場合、アニメーションを中止します。デフォルトは「animation-duration」をサポートしていない場合です。
+        overlay : false, // オーバーレイの有効/無効
+        overlayClass : 'animsition-overlay-slide', // オーバーレイのクラス
+        overlayParentElement : 'body', // オーバーレイ要素のラッパー
+        transition: function(url){ window.location.href = url; } // transition後にどこに遷移させるかを設定、urlは「linkElement」のhref
+      });
+    });
+  </script>
 </head>
 <body>
-  <div class="quiz-wrapper">
+  <div class="quiz-wrapper animsition">
     <h1 class="title">MCZ <br> Quiz</h1>
     <section>
       <div class="explanation">
         <h3>ももクロについての問題が<br>10問出てきます</h3>
         <h3>何問答えられるかチャレンジ！</h3>
       </div>
-      <p><a href="quiz.html" class="btn start" style="color: var(--reni);">Start</a></p>
+      <p><a href="quiz.html" class="btn start animsition-link" style="color: var(--reni);">Start</a></p>
     </section>
     <footer>
-      <p><a href="../index.html" class="back">Back to page "top"</a></p>
+      <p><a href="../index.html" class="back animsition-link" data-animsition-out-class="zoom-out" data-animsition-out-duration="400">Back to page "top"</a></p>
     </footer>
   </div>
 </body>

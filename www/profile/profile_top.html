@@ -12,40 +12,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     
     <script src="../components/loader.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/animsition.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/animsition.min.js"></script>
+    <script type="text/javascript"> 
+      $(document).ready(function() {
+        $(".animsition").animsition({
+          inClass: 'zoom-in-sm', // ロード時のエフェクト
+          outClass: 'zoom-out', // 離脱時のエフェクト
+          inDuration: 300, // ロード時の演出時間
+          outDuration: 400, // 離脱時の演出時間
+          linkElement: '.animsition-link', // アニメーションを行う要素
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: true, // ローディングの有効/無効
+          loadingParentElement: 'body', // ローディング要素のラッパー
+          loadingClass: 'animsition-loading', // ローディングのクラス
+          loadingInner: '', // e.g '' ローディングの内容
+          timeout: false, // 一定時間が経ったらアニメーションをキャンセルの有効/無効
+          timeoutCountdown: 5000, // アニメーションをキャンセルするまでの時間
+          onLoadEvent: true, // onLoadイベント後にアニメーションをするかの有効/無効
+          browser: [ 'animation-duration', '-webkit-animation-duration'],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          // ブラウザが配列内のCSSプロパティをサポートしていない場合、アニメーションを中止します。デフォルトは「animation-duration」をサポートしていない場合です。
+          overlay : false, // オーバーレイの有効/無効
+          overlayClass : 'animsition-overlay-slide', // オーバーレイのクラス
+          overlayParentElement : 'body', // オーバーレイ要素のラッパー
+          transition: function(url){ window.location.href = url; } // transition後にどこに遷移させるかを設定、urlは「linkElement」のhref
+        });
+      });
+    </script>
 </head>
 <body>
-  <div class="profile-wrapper">
+  <div class="profile-wrapper animsition">
     <h1 class="title">Member's profile</h1>
 
     <section class="members">
       <div class="member">
         <div class="pic">
-          <a href="ayaka.html"><img src="https://img.stardust.co.jp/upload/talent/photo/3/362.H.jpg"  style="width: 140px; border-radius: 20px;"></a>
+          <a href="ayaka.html" class="animsition-link"><img src="https://img.stardust.co.jp/upload/talent/photo/3/362.H.jpg"  style="height: 190px; border-radius: 20px;"></a>
         </div>
-        <a href="ayaka.html" style="text-shadow: 2px 2px 10px var(--ayaka),-2px  2px 10px var(--ayaka), 2px -2px 10px var(--ayaka), -2px -2px 10px var(--ayaka);">Ayaka<br>Sasaki</a>
+        <a href="ayaka.html" class="animsition-link" style="text-shadow: 2px 2px 10px var(--ayaka),-2px  2px 10px var(--ayaka), 2px -2px 10px var(--ayaka), -2px -2px 10px var(--ayaka);">Ayaka<br>Sasaki</a>
       </div>
       <div class="member">
         <div class="pic">
-          <a href="kanako.html"><img src="https://img.stardust.co.jp/upload/talent/photo/2/244.H.jpg" style="width: 140px; border-radius: 20px;"></a>
+          <a href="kanako.html" class="animsition-link"><img src="https://img.stardust.co.jp/upload/talent/photo/2/244.H.jpg" style="height: 190px; border-radius: 20px;"></a>
         </div>
-        <a href="kanako.html" style="text-shadow: 2px 2px 10px var(--kanako),-2px  2px 10px var(--kanako), 2px -2px 10px var(--kanako), -2px -2px 10px var(--kanako);">Kanako<br>Momota</a>      
+        <a href="kanako.html" class="animsition-link" style="text-shadow: 2px 2px 10px var(--kanako),-2px  2px 10px var(--kanako), 2px -2px 10px var(--kanako), -2px -2px 10px var(--kanako);">Kanako<br>Momota</a>      
       </div>
       <div class="member">
         <div class="pic">
-          <a href="shiori.html"><img src="https://img.stardust.co.jp/upload/talent/photo/2/250.H.jpg" style="width: 140px; border-radius: 20px;"></a>
+          <a href="shiori.html" class="animsition-link"><img src="https://img.stardust.co.jp/upload/talent/photo/2/250.H.jpg" style="height: 190px; border-radius: 20px;"></a>
         </div>
-        <a href="shiori.html" style="text-shadow: 2px 2px 10px var(--shiori),-2px  2px 10px var(--shiori), 2px -2px 10px var(--shiori), -2px -2px 10px var(--shiori);">Shiori<br>Tamai</a>
+        <a href="shiori.html" class="animsition-link" style="text-shadow: 2px 2px 10px var(--shiori),-2px  2px 10px var(--shiori), 2px -2px 10px var(--shiori), -2px -2px 10px var(--shiori);">Shiori<br>Tamai</a>
       </div>
       <div class="member">
       <div class="pic">
-        <a href="reni.html"><img src="https://img.stardust.co.jp/upload/talent/photo/2/238.H.jpg" style="width: 140px; border-radius: 20px;"></a>
+        <a href="reni.html" class="animsition-link"><img src="https://img.stardust.co.jp/upload/talent/photo/2/238.H.jpg" style="height: 190px; border-radius: 20px;"></a>
       </div>
-        <a href="reni.html" style="text-shadow: 2px 2px 10px var(--reni),-2px  2px 10px var(--reni), 2px -2px 10px var(--reni), -2px -2px 10px var(--reni);">Reni<br>Takagi</a>
+        <a href="reni.html" class="animsition-link" style="text-shadow: 2px 2px 10px var(--reni),-2px  2px 10px var(--reni), 2px -2px 10px var(--reni), -2px -2px 10px var(--reni);">Reni<br>Takagi</a>
       </div>
     </section>
 
     <footer>
-      <p><a href="../index.html" class="back">Back to page "top"</a></p>
+      <p><a href="../index.html" class="back animsition-link">Back to page "top"</a></p>
     </footer>
   </div>
 </body>

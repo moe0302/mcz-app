@@ -7,10 +7,15 @@ body {
   background: var(--ayaka);
 }
 
+.ptop {
+  margin-right: 10px;
+}
+
 .profile-wrapper {
-  min-height: 93vh;
+  min-height: 100vh;
   margin: 0;
   box-sizing: border-box;
+  padding: 0 0 62px;
 }
 
 footer {
@@ -18,13 +23,16 @@ footer {
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding: 5px 0;
   position: absolute;
   bottom: 0;
 }
 
 .title {
   font-size: 40px;
+}
+
+.profile-wrapper > img {
+  border-radius: 30px;
 }
 
 .member {
@@ -54,7 +62,6 @@ footer {
 .profile {
   width: 75%;
   margin: 0 auto;
-  /* font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; */
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -96,4 +103,9 @@ footer {
 
 .profile p {
   margin: 5px 0 0;
+}
+
+.sns {
+  padding: 30px 0;
+  margin: 0 auto;
 }

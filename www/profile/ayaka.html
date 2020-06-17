@@ -11,9 +11,40 @@
     <!-- フォントの設定の読み込み -->
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../dist/css/animsition.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/animsition.min.js"></script>
+    <script type="text/javascript"> 
+      $(document).ready(function() {
+        $(".animsition").animsition({
+          inClass: 'zoom-in-sm', // ロード時のエフェクト
+          outClass: 'zoom-out', // 離脱時のエフェクト
+          inDuration: 300, // ロード時の演出時間
+          outDuration: 400, // 離脱時の演出時間
+          linkElement: '.animsition-link', // アニメーションを行う要素
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: true, // ローディングの有効/無効
+          loadingParentElement: 'body', // ローディング要素のラッパー
+          loadingClass: 'animsition-loading', // ローディングのクラス
+          loadingInner: '', // e.g '' ローディングの内容
+          timeout: false, // 一定時間が経ったらアニメーションをキャンセルの有効/無効
+          timeoutCountdown: 5000, // アニメーションをキャンセルするまでの時間
+          onLoadEvent: true, // onLoadイベント後にアニメーションをするかの有効/無効
+          browser: [ 'animation-duration', '-webkit-animation-duration'],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          // ブラウザが配列内のCSSプロパティをサポートしていない場合、アニメーションを中止します。デフォルトは「animation-duration」をサポートしていない場合です。
+          overlay : false, // オーバーレイの有効/無効
+          overlayClass : 'animsition-overlay-slide', // オーバーレイのクラス
+          overlayParentElement : 'body', // オーバーレイ要素のラッパー
+          transition: function(url){ window.location.href = url; } // transition後にどこに遷移させるかを設定、urlは「linkElement」のhref
+        });
+      });
+    </script>
 </head>
-<body>
-    <div class="profile-wrapper"  style="color: var(--ayaka);">
+<body style="padding-bottom: 1px">
+    <div class="profile-wrapper animsition"  style="color: var(--ayaka);">
         <h1  class="title">Ayaka's profile</h1>
         <img src="https://img.stardust.co.jp/upload/talent/photo/3/362.H.jpg" style="width: 80%;">
         <section class="profile">
@@ -67,12 +98,18 @@
                 <p>思いやり</p>
             </div>
             <div class="data-ayaka">
-                <h3>自分にとってももクロとは？</h3>
+                <h3>自分にとって<br>ももクロとは？</h3>
                 <p>あーりんにとってももクロとは、ダイヤモンドみたいに光り輝く夢いっぱいのもの</p>
             </div>
         </section>
-        <p><a href="profile_top.html" class="back">Back to page "profile-top"</a></p>
-        <p><a href="../index.html" class="back">Back to page "top"</a></p>
+        <section class="sns">
+            <p>↓ Ayaka's SNS ↓</p>
+            <a href="https://ameblo.jp/sasaki-sd/"><img src="https://static.wixstatic.com/media/d69191_bf41a12ffc194023a030536ca294776d~mv2.png" style="width:50px; border-radius: 10px;"></a>
+        </section>
+        <footer>
+            <p><a href="profile_top.html" class="back ptop animsition-link">Back to page "profile-top"</a></p>
+            <p><a href="../index.html" class="back animsition-link">Back to page "top"</a></p>
+        </footer>
     </div>
 </body>
 </html>

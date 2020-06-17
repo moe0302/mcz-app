@@ -8,19 +8,47 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- フォントの設定の読み込み -->
+    <link rel="stylesheet" href="./dist/css/animsition.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/animsition.min.js"></script>
+    <script type="text/javascript"> 
+      $(document).ready(function() {
+        $(".animsition").animsition({
+          inClass: 'zoom-in', // ロード時のエフェクト
+          outClass: 'zoom-out-sm', // 離脱時のエフェクト
+          inDuration: 1000, // ロード時の演出時間
+          outDuration: 300, // 離脱時の演出時間
+          linkElement: '.animsition-link', // アニメーションを行う要素
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: true, // ローディングの有効/無効
+          loadingParentElement: 'body', // ローディング要素のラッパー
+          loadingClass: 'animsition-loading', // ローディングのクラス
+          loadingInner: '', // e.g '' ローディングの内容
+          timeout: false, // 一定時間が経ったらアニメーションをキャンセルの有効/無効
+          timeoutCountdown: 5000, // アニメーションをキャンセルするまでの時間
+          onLoadEvent: true, // onLoadイベント後にアニメーションをするかの有効/無効
+          browser: [ 'animation-duration', '-webkit-animation-duration'],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          // ブラウザが配列内のCSSプロパティをサポートしていない場合、アニメーションを中止します。デフォルトは「animation-duration」をサポートしていない場合です。
+          overlay : false, // オーバーレイの有効/無効
+          overlayClass : 'animsition-overlay-slide', // オーバーレイのクラス
+          overlayParentElement : 'body', // オーバーレイ要素のラッパー
+          transition: function(url){ window.location.href = url; } // transition後にどこに遷移させるかを設定、urlは「linkElement」のhref
+        });
+      });
+    </script>
 </head>
 <body>
-  <div>
+  <div class="animsition">
     <img class="logo" src="https://pics.prcm.jp/f4c3186faa72a/76484045/png/76484045_480x178.png">
     <div class="menu">
-      <p><a href="./profile/profile_top.html" class="btn ayaka" style="border: 5px outset var(--ayaka); border-radius: 20px;">Profile</a></p>
-      <p><a href="./choice/choice.html" class="btn kanako" style="border: 5px outset var(--kanako); border-radius: 20px;">Today's choice</a></p>
-      <p><a href="./mood/mood_top.html" class="btn shiori" style="border: 5px outset var(--shiori); border-radius: 20px;">Explore music by mood</a></p>
-      <p><a href="./quiz/quiz_top.html" class="btn reni" style="border: 5px outset var(--reni); border-radius: 20px;">MCZ Quiz</a></p>
+      <p><a href="./profile/profile_top.html" class="btn ayaka animsition-link" style="border: 5px outset var(--ayaka); border-radius: 20px;">Profile</a></p>
+      <p><a href="./choice/choice.html" class="btn kanako animsition-link" style="border: 5px outset var(--kanako); border-radius: 20px;">Today's choice</a></p>
+      <p><a href="./mood/mood_top.html" class="btn shiori animsition-link" style="border: 5px outset var(--shiori); border-radius: 20px;">Explore music by mood</a></p>
+      <p><a href="./quiz/quiz_top.html" class="btn reni animsition-link" style="border: 5px outset var(--reni); border-radius: 20px;">MCZ Quiz</a></p>
     </div>
   </div>
 </body>
-
 </html>
 

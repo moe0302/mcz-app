@@ -4,8 +4,7 @@ body {
 }
 
 .choice-wrapper {
-  min-height: 93vh;
-  /* position: relative; */
+  min-height: 100vh;
   padding-bottom: 5px;
   margin: 0;
   box-sizing: border-box;
