@@ -10,11 +10,14 @@ body {
 
 h3 {
   color: #222;
+  padding: 10px;
+  margin: 0;
 }
 
 .btn {
   border: 5px solid var(--reni);
   border-radius: 10px;
+  width: 65%;
 }
 
 .quiz-wrapper {
@@ -24,12 +27,13 @@ h3 {
   padding-bottom: 5px;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 footer {
   width: 100%;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   position: absolute;
   bottom: 0;
 }
@@ -40,7 +44,7 @@ footer {
 
 /*quiztop*/
 .explanation {
-  margin-bottom: 10%;
+  padding-bottom: 20px;
 }
 
 .explanation > h3 {
@@ -49,12 +53,11 @@ footer {
 }
 
 .container {
-  width: 90%;
+  width: 88%;
   margin: 0 auto ;
   background: #fff;
   border-radius: 4px;
   padding: 10px 10px 15px;
-  position: relative;
 }
 
 #question {
@@ -132,7 +135,7 @@ footer {
   width: 80%;
   background: #fff;
   padding: 20px;
-  top: 0;
+  top: 140px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -141,6 +144,7 @@ footer {
   color: var(--reni);
   text-align: center;
   transition: 0.4s;
+  z-index: 2;
 }
 
 #result.hidden {
@@ -154,4 +158,18 @@ footer {
 #result > p {
   font-size: 20px;
   margin-bottom: 40px;
+}
+
+#mask {
+  background: rgba(35, 12, 35, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#mask.hidden {
+  display: none;
 }

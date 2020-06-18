@@ -49,6 +49,8 @@ footer {
   color: var(--shiori);
   font-weight: normal;
   font-size: 20px;
+  padding: 0;
+  margin: 10px;
 }
 
 .q {

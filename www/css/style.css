@@ -75,10 +75,13 @@ body {
 .back {
   display: inline-block;
   margin: 0 auto; 
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 85px;
+  letter-spacing: 1px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;

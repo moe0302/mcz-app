@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="quiz_style.css">
   <script src="../components/loader.js"></script>
   <!-- フォントの設定の読み込み -->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
   
   <link rel="stylesheet" href="../dist/css/animsition.min.css">
@@ -44,25 +45,27 @@
 </head>
 <body>
   <div class="quiz-wrapper animsition">
-    <img class="logo" src="../images/logo.png">
+    <h1 class="title">MCZ Quiz</h1>
 
     <section class="container">
       <p id="question"></p>
       <ul id="choices"></ul>
       <div id="btn" class="disabled">Next</div>
-
-      <section id="result" class="hidden">
-        <h5></h5>
-        <p></p>
-        <a href="" class="animsition-link">Replay?</a>
-        <a href="../index.html">Back to page "top"</a>
-      </section>
+    </section>
+    <div id="mask" class="hidden"></div>
+    <section id="result" class="hidden">
+      <h5></h5>
+      <p></p>
+      <a href="" class="animsition-link">Replay</a>
+      <a href="quiz_top.html" class="animsition-link">Quiz Menu</a>
+      <a href="../index.html" class="animsition-link">Menu</a>
     </section>
     <footer>
-      <p><a href="quiz_top.html" class="back animsition-link">Back to page "Quiz top"</a></p>
+      <a href="quiz_top.html" class="back animsition-link" style="margin-right: 10px;">Quiz Menu</a>
+      <a href="../index.html" class="back animsition-link">Menu</a>
     </footer>
   </div>
 
-  <script src="quiz_main.js"></script>
+  <script src="quiz.js"></script>
 </body>
 </html>
