@@ -219,7 +219,7 @@
     let todayNum = passedDay % (musicSet.length);
     console.log(todayNum);
 
-    // let todayNum = 27;
+    // let todayNum = 10;
 
     // 曲の情報を埋め込む
     jacket.setAttribute('src', musicSet[todayNum].j);
