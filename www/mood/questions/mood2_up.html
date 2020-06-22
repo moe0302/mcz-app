@@ -1,47 +1,47 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <link rel="stylesheet" href="../components/loader.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../mood_style.css">
-    <script src="../components/loader.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <link rel="stylesheet" href="../components/loader.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../mood_style.css">
+  <script src="../components/loader.js"></script>
 
-    <!-- フォントの設定の読み込み -->
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <!-- フォントの設定の読み込み -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../dist/css/animsition.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../../dist/js/animsition.min.js"></script>
-    <script type="text/javascript"> 
-      $(document).ready(function() {
-        $(".animsition").animsition({
-          inClass: 'flip-in-y-rt', // ロード時のエフェクト
-          outClass: 'flip-out-y', // 離脱時のエフェクト
-          inDuration: 400, // ロード時の演出時間
-          outDuration: 400, // 離脱時の演出時間
-          linkElement: '.animsition-link', // アニメーションを行う要素
-          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-          loading: true, // ローディングの有効/無効
-          loadingParentElement: 'body', // ローディング要素のラッパー
-          loadingClass: 'animsition-loading', // ローディングのクラス
-          loadingInner: '', // e.g '' ローディングの内容
-          timeout: false, // 一定時間が経ったらアニメーションをキャンセルの有効/無効
-          timeoutCountdown: 5000, // アニメーションをキャンセルするまでの時間
-          onLoadEvent: true, // onLoadイベント後にアニメーションをするかの有効/無効
-          browser: [ 'animation-duration', '-webkit-animation-duration'],
-          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-          // ブラウザが配列内のCSSプロパティをサポートしていない場合、アニメーションを中止します。デフォルトは「animation-duration」をサポートしていない場合です。
-          overlay : false, // オーバーレイの有効/無効
-          overlayClass : 'animsition-overlay-slide', // オーバーレイのクラス
-          overlayParentElement : 'body', // オーバーレイ要素のラッパー
-          transition: function(url){ window.location.href = url; } // transition後にどこに遷移させるかを設定、urlは「linkElement」のhref
-        });
+  <link rel="stylesheet" href="../../dist/css/animsition.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../dist/js/animsition.min.js"></script>
+  <script type="text/javascript"> 
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'flip-in-y-rt', // ロード時のエフェクト
+        outClass: 'flip-out-y', // 離脱時のエフェクト
+        inDuration: 400, // ロード時の演出時間
+        outDuration: 400, // 離脱時の演出時間
+        linkElement: '.animsition-link', // アニメーションを行う要素
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true, // ローディングの有効/無効
+        loadingParentElement: 'body', // ローディング要素のラッパー
+        loadingClass: 'animsition-loading', // ローディングのクラス
+        loadingInner: '', // e.g '' ローディングの内容
+        timeout: false, // 一定時間が経ったらアニメーションをキャンセルの有効/無効
+        timeoutCountdown: 5000, // アニメーションをキャンセルするまでの時間
+        onLoadEvent: true, // onLoadイベント後にアニメーションをするかの有効/無効
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        // ブラウザが配列内のCSSプロパティをサポートしていない場合、アニメーションを中止します。デフォルトは「animation-duration」をサポートしていない場合です。
+        overlay : false, // オーバーレイの有効/無効
+        overlayClass : 'animsition-overlay-slide', // オーバーレイのクラス
+        overlayParentElement : 'body', // オーバーレイ要素のラッパー
+        transition: function(url){ window.location.href = url; } // transition後にどこに遷移させるかを設定、urlは「linkElement」のhref
       });
-    </script>
+    });
+  </script>
 </head>
 <body>
   <div class="mood-wrapper">
