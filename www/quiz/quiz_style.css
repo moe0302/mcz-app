@@ -5,6 +5,7 @@ body {
 }
 
 .title {
+  padding-top: 10px;
   font-size: 60px;
   line-height: 65px;
 }
@@ -22,8 +23,7 @@ h3 {
 .quiz-wrapper {
   width: 100%;
   min-height: 100vh;
-  /* position: relative; */
-  padding-bottom: 5px;
+  padding:20px 0 5px;
   margin: 0;
   box-sizing: border-box;
   position: relative;
@@ -50,13 +50,24 @@ footer {
   font-size: 20px;
   font-weight: normal;
 }
+/*quiztop end*/
 
 .container {
-  width: 88%;
-  margin: 0 auto ;
+  width: 85%;
+  margin: 0 auto;
   background: #fff;
   border-radius: 4px;
-  padding: 10px 10px 15px;
+  padding: 10px;
+  position: relative;
+}
+
+#btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
 
 #question {
@@ -71,11 +82,12 @@ footer {
   padding: 0;
   margin-bottom: 20px;
   font-size: 15px;
+  line-height: 23px;
 }
 
 #choices > li {
   border: 1px solid var(--reni);
-  border-radius: 4px;
+  border-radius:20px;
   padding: 10px;
   margin: 0 auto 20px;
   width: 80%;
@@ -92,10 +104,14 @@ footer {
   border-color: #c3e6cb;
   color: #155724;
   font-weight: bold;
+  font-size: 0;
 }
 
-#choices > li.correct::after {
-  content: ' ...正解!';
+#choices > li.correct::before {
+  font-size: 15px;
+  content: '正解！';
+  line-height: 14px;
+  vertical-align: middle;
 }
 
 #choices > li.wrong {
@@ -103,15 +119,18 @@ footer {
   border-color: #f5c6cb;
   color: #721c24;
   font-weight: bold;
+  font-size: 0;
 }
 
-#choices > li.wrong::after {
-  content: ' ... 残念!';
+#choices > li.wrong::before {
+  font-size: 15px;
+  content: '残念！';
+  line-height: 14px;
+  vertical-align: middle;
 }
 
 #btn, #result > a {
   display: block;
-  /* background: rgb(194, 103, 243); */
   background: var(--reni);
   padding: 8px;
   margin: 25px auto 0;

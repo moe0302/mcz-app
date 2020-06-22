@@ -4,6 +4,7 @@ body {
 }
 
 .choice-wrapper {
+  width: 100%;
   min-height: 100vh;
   padding-bottom: 5px;
   margin: 0;
@@ -17,6 +18,18 @@ footer {
   padding: 0;
   position: absolute;
   bottom: 0;
+}
+
+h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.btn {
+  margin-top: 50px;
+  border-color: var(--kanako);
 }
 
 .back {
@@ -59,4 +72,83 @@ section {
   height:40px;
   margin-right: 5px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*アニメーション*/
+.momotan{
+	width: 130px;
+  height: 100px;
+  border-radius: 10px;
+  background-image: url(../images/momotan.png);
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+}
+.momotan.anime{
+  animation-name: upDown;
+  animation-iteration-count: infinite;
+  animation-duration: 0.4s;
+  animation-direction: alternate;
+  animation-timing-function: steps(2);
+  transition-duration: .3s;
+  transition-property: transform;
+}
+
+
+.momotan_stage{
+  position: relative;
+  width: 100%;
+  top: 0px;
+  display: block;
+}
+
+
+.momotan_wrap{
+  display: block;
+  position: absolute;
+  bottom: 45px;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  margin-right: -65px;
+}
+
+.momotan_wrap[data-order="left"] {
+  animation-name: GoLeft;
+}
+.momotan_wrap[data-order="right"] {
+  animation-name: GoRight;
+}
+
+[data-order="right"] > .momotan{
+  transform: rotateY(180deg);
+}
+
+@keyframes GoLeft {
+  0% {
+      right: 10%;
+  }
+  100% {
+      right: 90%;
+  }
+}
+@keyframes GoRight {
+  0% {
+      right: 90%;
+  }
+  100% {
+      right: 10%;
+  }
+}
+
+@keyframes upDown {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: 50px;
+  }
 }

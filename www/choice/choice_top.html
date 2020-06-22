@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <link rel="stylesheet" href="../components/loader.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../mood_style.css">
-    <script src="../components/loader.js"></script>
-
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="choice_style.css">
+    <script src="components/loader.js"></script>
     <!-- フォントの設定の読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../../dist/css/animsition.css">
+    
+    <link rel="stylesheet" href="../dist/css/animsition.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../../dist/js/animsition.min.js"></script>
+    <script type="text/javascript" src="../dist/js/animsition.min.js"></script>
     <script type="text/javascript"> 
       $(document).ready(function() {
         $(".animsition").animsition({
-          inClass: 'flip-in-y-rt', // ロード時のエフェクト
-          outClass: 'flip-out-y', // 離脱時のエフェクト
+          inClass: 'zoom-in-sm', // ロード時のエフェクト
+          outClass: 'rotate-out-lg', // 離脱時のエフェクト
           inDuration: 400, // ロード時の演出時間
           outDuration: 400, // 離脱時の演出時間
           linkElement: '.animsition-link', // アニメーションを行う要素
@@ -44,20 +44,34 @@
     </script>
 </head>
 <body>
-  <div class="mood-wrapper">
-    <img class="logo" src="https://pics.prcm.jp/f4c3186faa72a/76484045/png/76484045_480x178.png">
-
-    <section class="q animsition">
-      <h2 class="question">どんな曲が聞きたい気分？</h2>
-      <div class="answer">
-        <p><a href="../results/kakkoii/ladymay.html" class="btnA">オトナの女性</a></p>
-        <p><a href="../results/kakkoii/guns.html" class="btnA">強い意志</a></p>
+  <div class="choice-wrapper animsition">
+    <h1 class="title">Today's choice</h1>
+    <section>
+      <div>
+        <h3>日替わりでおすすめの曲を<br>一曲紹介します！</h3>
+        <h3>今日のおすすめは…</h3>
       </div>
+      <a href="choice.html" class="btn animsition-link" style="color: var(--kanako);">Check it out!</a>
     </section>
+    <div class="momotan_stage">
+      <div class="momotan_wrap" data-order="left">
+        <span class="momotan anime"></span>
+      </div>
+    </div>
     <footer>
-      <p><a href="mood3_kakkoii.html" class="back animsition-link">Back</a></p>
-      <p><a href="../../index.html" class="back">Menu</a></p>
+      <p><a href="../index.html" class="back animsition-link" data-animsition-out-class="zoom-out" data-animsition-out-duration="400">Back</a></p>
     </footer>
+    <script>
+      $(document).ready(function(){
+        $('.momotan_wrap').on('animationend', function () {
+            if ($(this).attr('data-order') === 'left') {
+                $(this).attr('data-order', 'right');
+            } else {
+                $(this).attr('data-order', 'left');
+            }
+        });
+      });
+    </script>
   </div>
 </body>
 </html>

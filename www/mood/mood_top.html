@@ -11,7 +11,7 @@
 
   <!-- フォントの設定の読み込み -->
   <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../dist/css/animsition.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -56,9 +56,25 @@
       </div>
       <p><a href="questions/mood1.html" class="btn animsition-link" style="color: var(--shiori);">Start</a></p>
     </section>
+    <div class="momotan_stage">
+      <div class="momotan_wrap" data-order="left">
+        <span class="momotan anime"></span>
+      </div>
+    </div>
     <footer>
       <p><a href="../index.html" class="back">Back</a></p>
     </footer>
   </div>
+  <script>
+    $(document).ready(function(){
+      $('.momotan_wrap').on('animationend', function () {
+          if ($(this).attr('data-order') === 'left') {
+              $(this).attr('data-order', 'right');
+          } else {
+              $(this).attr('data-order', 'left');
+          }
+      });
+    });
+  </script>
 </body>
 </html>

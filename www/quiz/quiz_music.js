@@ -29,10 +29,19 @@
     {q: 'サビの歌詞がほぼ『コ』だけ<br>の曲は？', j: '../images/pinky.jpg', c: ['ココ☆ナツ', 'ワニとシャンプー', 'コノウタ', 'BIONIC CHERRY']},
     {q: 'このアルバムの中の”けんかと<br>仲直り”をテーマにした曲は？', j: '../images/AMARANTHUS.jpg', c: ['武陵桃源なかよし物語', 'サボテンとリボン', '仏桑花', 'カントリーローズ -時の旅人-']},
     {q: '”ショー”をテーマにした<br>このアルバムのタイトルは？', j: '../images/MOMOIROCLOVERZ.jpg', c: ['MOMOIRO CLOVER Z', 'ロードショー', 'The show', 'AMARANTHUS']},
-    {q: '？', j: '../images/iriguchi.jpg', c: ['', '', '', '']},
-    {q: '？', j: '../images/iriguchi.jpg', c: ['', '', '', '']},
+    {q: '「ワニとシャンプー」では最後<br>宿題は残り何枚になっている？', j: '../images/battleandromance.jpg', c: ['60枚', '50枚', '70枚', '30枚']},
+    {q: '男祭り2015で太宰府天満宮にて<br>歌唱奉納をした曲は？', j: '../images/5thdimension.jpg', c: ['灰とダイヤモンド', 'クローバーとダイヤモンド', '白金の夜明け', '月と銀紙飛行船']},
     //ここまでで20問
-    
+    {q: 'グループ初の全編3拍子の曲は？', j: '../images/5thdimension.jpg',c: ['月と銀紙飛行船', '灰とダイヤモンド', '鋼の意思', '泣いてもいいんだよ']},
+    {q: 'KISSの楽曲のカバーであり<br>初めて全編英語に挑戦した曲は？', j: '../images/yumenoukiyo.jpg', c: ['Rock and Roll All Night', 'SAMURAI SON', 'Moon Revenge', 'WE ARE BORN']},
+    {q: '「あーりんは反抗期!」の中で禁止されていないものは？', j: '../images/allstars.jpg', c: ['自転車', 'プリクラ', 'カラオケ', 'マンガ']},
+    {q: '「おぎゃー！」という産声から<br>始まる曲は？', j: '../images/AMARANTHUS.jpg', c: ['WE ARE BORN', 'デモンストレーション', 'イマジネーション', 'ROCK THE BOAT']},
+    {q: 'ももクロが飛行機に乗って<br>日本一周する曲は？', j: '../images/battleandromance.jpg', c: ['ももクロのニッポン万歳！', 'ニッポン笑顔百景', '宙飛ぶ！お座敷列車', '堂々平和宣言']},
+    {q: 'メンバーの名前やカラーが<br>歌詞に入っていない曲は？', j: '../images/momoclo.jpg', c: ['5The POWER', 'モノクロデッサン', 'ピンキージョーンズ', 'ミライボウル']},
+    {q: '『ファービー』のイメージソングになった曲は？', j: '../images/saraba.jpg', c: ['Wee-Tee-Wee-Tee', 'Dream Wave', 'Link Link', 'みてみて☆こっちっち']},
+    {q: 'ももたまいの曲ではないのは？', j: '../images/momotamai.jpg', c: ['太陽とえくぼ', 'シングルベッドはせまいのです', 'Ring the Bell', '夜明けのアモーレ']},
+    {q: 'このアルバムでセルフリメイク<br>されていない曲は？', j: '../images/ZZs.jpg', c: ['ミライボウル', '全力少女', 'オレンジノート', 'DNA狂詩曲']},
+    {q: 'この曲はどのライブのテーマソング？', j: '../images/nightmare.jpg', c: ['MomocloMania2019', 'MomocloMania2018', 'ももクロ夏のバカ騒ぎ2018', 'ももクロ夏のバカ騒ぎ2019']},
     //ここまでで30問
   ]);
 
